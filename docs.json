@@ -46,6 +46,10 @@
     }
   },
   "thumbnails": {
-    "appearance": "light"
+    "appearance": "dark",
+    "background": "/images/LOGOPOLYX.svg"
+  },
+  "styling": {
+    "codeblocks": "dark"
   }
 }
