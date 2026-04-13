@@ -22,8 +22,8 @@
     "links": [],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Trade",
+      "href": "https://t.me/polyxcopy_bot"
     }
   },
   "contextual": {
@@ -60,5 +60,8 @@
   },
   "metadata": {
     "timestamp": true
+  },
+  "banner": {
+    "dismissible": false
   }
 }
