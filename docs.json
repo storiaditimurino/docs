@@ -18,8 +18,9 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/LOGOPOLYX.svg",
+    "dark": "/images/LOGOPOLYX.svg",
+    "href": "https://t.me/polyxcopy_bot"
   },
   "navbar": {
     "links": [
@@ -46,16 +47,10 @@
      "vscode"
    ]
   },
-  "favicon": {
-    "light": "/images/LOGOPOLYX.svg",
-    "dark": "/images/LOGOPOLYX.svg"
-  },
+  "favicon": "/images/LOGOPOLYX.svg",
   "appearance": {
     "strict": false,
     "default": "dark"
-  },
-  "banner": {
-    "content": "Trade"
   },
   "thumbnails": {
     "appearance": "dark",
@@ -67,5 +62,8 @@
   "styling": {
     "codeblocks": "dark",
     "latex": false
+  },
+  "background": {
+    "image": "/images/LOGOPOLYX.svg"
   }
 }
