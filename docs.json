@@ -48,7 +48,10 @@
      "vscode"
    ]
   },
-  "favicon": "/images/LOGOPOLYX.svg",
+  "favicon": {
+    "light": "/images/LOGOPOLYX.svg",
+    "dark": "/images/LOGOPOLYX.svg"
+  },
   "appearance": {
     "strict": false,
     "default": "dark"
@@ -62,5 +65,8 @@
   "styling": {
     "codeblocks": "dark",
     "latex": false
+  },
+  "icons": {
+    "library": "fontawesome"
   }
 }
