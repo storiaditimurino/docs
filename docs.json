@@ -51,5 +51,14 @@
   },
   "styling": {
     "codeblocks": "dark"
+  },
+  "icons": {
+    "library": "fontawesome"
+  },
+  "interaction": {
+    "drilldown": true
+  },
+  "metadata": {
+    "timestamp": true
   }
 }
