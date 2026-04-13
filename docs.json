@@ -1,13 +1,12 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "PolyX",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#E1FF01",
+    "light": "#E1FF01",
+    "dark": "#E1FF01"
   },
-  "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -90,8 +89,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Trade",
+        "href": "https://t.me/polyxcopy_bot"
       }
     ],
     "primary": {
@@ -112,11 +111,26 @@
      "vscode"
    ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+  "favicon": {
+    "light": "/images/LOGOPOLYX.svg",
+    "dark": "/images/LOGOPOLYX.svg"
+  },
+  "appearance": {
+    "strict": false,
+    "default": "dark"
+  },
+  "banner": {
+    "content": "Trade"
+  },
+  "thumbnails": {
+    "appearance": "dark",
+    "background": "/images/LOGOPOLYX.svg",
+    "fonts": {
+      "family": "Inter"
     }
+  },
+  "styling": {
+    "codeblocks": "dark",
+    "latex": false
   }
 }
