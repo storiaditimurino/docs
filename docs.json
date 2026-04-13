@@ -1,29 +1,25 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Settings - PolyX",
+  "name": "PolyX",
   "colors": {
     "primary": "#E1FF01",
-    "light": "#ffffff",
-    "dark": "#000000"
+    "light": "#E1FF01",
+    "dark": "#E1FF01"
   },
   "navigation": {
     "groups": [
       {
         "group": "Getting Started",
         "pages": [
-          "introduction"
+          "introduction",
+          "quickstart"
         ]
       }
     ]
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
+    "links": [],
     "primary": {
       "type": "button",
       "label": "Dashboard",
@@ -43,5 +39,13 @@
    ]
   },
   "favicon": "/images/LOGOPOLYX.svg",
-  "logo": "/images/LOGOPOLYX.svg"
+  "logo": "/images/LOGOPOLYX.svg",
+  "errors": {
+    "404": {
+      "redirect": true
+    }
+  },
+  "thumbnails": {
+    "appearance": "light"
+  }
 }
