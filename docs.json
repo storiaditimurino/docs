@@ -54,7 +54,6 @@
   },
   "thumbnails": {
     "appearance": "dark",
-    "background": "/images/LOGOPOLYX.svg",
     "fonts": {
       "family": "Inter"
     }
@@ -62,8 +61,5 @@
   "styling": {
     "codeblocks": "dark",
     "latex": false
-  },
-  "background": {
-    "image": "/images/LOGOPOLYX.svg"
   }
 }
