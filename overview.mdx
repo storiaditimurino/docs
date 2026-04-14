@@ -5,7 +5,7 @@ description: "Automatically mirror trades from any Polymarket wallet"
 
 # Copy Trading
 
-Copy trading lets you automatically replicate trades from any Polymarket wallet in real time. When the wallet you’re tracking buys or sells, Merlin places the same trade on your behalf.
+Copy trading lets you automatically replicate trades from any Polymarket wallet in real time. When the wallet you’re tracking buys or sells, PolyX places the same trade on your behalf.
 
 ## Getting Started
 
@@ -17,7 +17,7 @@ Use the `/copy` command or tap **“Copy Trading”** from the main menu to open
 
 1. Tap **“Add new config”**
 2. **Select a wallet** — if you have multiple wallets, choose which one will execute the copied trades. If you only have one wallet, this step is skipped automatically.
-3. **Enter the target wallet address** — paste the Polymarket wallet address you want to copy. Merlin verifies that the address has traded on Polymarket before accepting it.
+3. **Enter the target wallet address** — paste the Polymarket wallet address you want to copy. PolyX verifies that the address has traded on Polymarket before accepting it.
 4. **Name your config** — type a name (up to 42 characters) to help you identify this config later. Send `/skip` to use the target address as the name.
 
 Your config is created in an inactive state. Review the settings, then tap “**Start**” when you’re ready.
@@ -28,7 +28,7 @@ Your config is created in an inactive state. Review the settings, then tap “**
 
 ## Buy Modes
 
-The buy mode controls how much Merlin spends when copying a trade. Tap the mode buttons on the config detail screen to switch between them.
+The buy mode controls how much PolyX spends when copying a trade. Tap the mode buttons on the config detail screen to switch between them.
 
 | **Mode** | **Buy (USD amount)** | **Sell (shares)** |
 | :-- | :-- | :-- |
@@ -43,7 +43,7 @@ When you select **Fixed** or **Percent** mode, a **“Set Amount”** button app
 
 ## How Sells Work
 
-Sells require **Follow Sells** to be enabled. Merlin checks your on-chain balance and sells per mode — never more than you hold. No position = sell skipped.
+Sells require **Follow Sells** to be enabled. PolyX checks your on-chain balance and sells per mode — never more than you hold. No position = sell skipped.
 
 <Note>
   With **Reverse Mode** on, buys become sells and vice versa, following the same per-mode logic.
@@ -85,9 +85,9 @@ Each config has three on/off flags you can toggle by tapping the corresponding b
 
 | **Flag** | **Default** | **What it does** |
 | :-- | :-- | :-- |
-| **Follow Sells** | Off | When enabled, Merlin also copies sell orders from the target wallet. When disabled, only buys are copied. |
-| **Reverse Mode** | Off | When enabled, Merlin flips buy and sell. If the target buys, you sell — and if the target sells, you buy. |
-| **Buy Once** | Off | When enabled, Merlin only copies the first trade per market. Subsequent trades in the same market are ignored. |
+| **Follow Sells** | Off | When enabled, PolyX also copies sell orders from the target wallet. When disabled, only buys are copied. |
+| **Reverse Mode** | Off | When enabled, PolyX flips buy and sell. If the target buys, you sell — and if the target sells, you buy. |
+| **Buy Once** | Off | When enabled, PolyX only copies the first trade per market. Subsequent trades in the same market are ignored. |
 
 A green circle means the flag is on, red means off.
 
@@ -126,7 +126,7 @@ Tap **“Advanced Features”** on the config detail screen to reveal additional
 To clear any filter, type `clear` when prompted.
 
 <Note>
-  Price filters refer to the outcome price in cents. For example, setting Min Price to 10 and Max Price to 60 means Merlin only copies trades priced between 10c and 60c.
+  Price filters refer to the outcome price in cents. For example, setting Min Price to 10 and Max Price to 60 means PolyX only copies trades priced between 10c and 60c.
 </Note>
 
 ## Pro Tips for Strategy
