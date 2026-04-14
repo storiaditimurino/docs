@@ -1,0 +1,42 @@
+---
+title: "⚡ How to Copy Trade"
+description: "Automatically mirror trades from any Polymarket wallet"
+---
+
+# Copy Trading
+
+Copy trading lets you automatically replicate trades from any Polymarket wallet in real time. When the wallet you’re tracking buys or sells, Merlin places the same trade on your behalf.
+
+## Getting Started
+
+### Open Copy Trading
+
+Use the `/copy` command or tap **“Copy Trading”** from the main menu to open the copy trading dashboard. From here you can see all your configs and create new ones.
+
+### Create a Config
+
+1. Tap **“Add new config”**
+2. **Select a wallet** — if you have multiple wallets, choose which one will execute the copied trades. If you only have one wallet, this step is skipped automatically.
+3. **Enter the target wallet address** — paste the Polymarket wallet address you want to copy. Merlin verifies that the address has traded on Polymarket before accepting it.
+4. **Name your config** — type a name (up to 42 characters) to help you identify this config later. Send `/skip` to use the target address as the name.
+
+Your config is created in an inactive state. Review the settings, then tap**“Start”**when you’re ready.
+
+<Tip>
+  You can find a trader’s wallet address on their Polymarket profile page.
+</Tip>
+
+## Buy Modes
+
+The buy mode controls how much Merlin spends when copying a trade. Tap the mode buttons on the config detail screen to switch between them.
+
+| **Mode** | **Buy (USD amount)** | **Sell (shares)** |
+| :-- | :-- | :-- |
+| **Exact** | Spends the same USD amount as the target’s trade | Sells the same number of shares as the target, capped at your position |
+| **Fixed** | Spends a fixed USD amount you set (e.g., always \$25) | Sells the same percentage of your position as the target sold of theirs |
+| **Percent** | Spends a percentage of the target’s USD amount (e.g., 50% of their trade) | Sells a proportional number of shares based on your percentage, capped at your position |
+
+When you select **Fixed** or **Percent** mode, a **“Set Amount”** button appears. Tap it and enter:
+
+- For **Fixed**: a dollar amount (e.g., `25` for \$25)
+- For **Percent**: a percentage from 1 to 1000 (e.g., `50` for 50%, or `200` to double their size)
