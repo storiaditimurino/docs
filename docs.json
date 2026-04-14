@@ -28,6 +28,13 @@
         "pages": [
           "auto-trading"
         ]
+      },
+      {
+        "group": "Trading",
+        "pages": [
+          "fees",
+          "events-and-markets"
+        ]
       }
     ]
   },

@@ -1,0 +1,70 @@
+---
+title: "Events & Markets"
+description: "Browse Polymarket events and markets"
+---
+
+# Events & Markets
+
+PolyX lets you view Polymarket events and markets directly in Telegram. Paste any Polymarket URL into the chat to get started.
+
+## Viewing an Event
+
+An **event** is a collection of related markets (e.g., “2024 Presidential Election” might contain markets for each candidate).When you open an event, Merlin shows:
+
+- **Event title**
+- **24h Volume** and **Liquidity**
+- **Expiration date** (if set)
+- **Current Markets** — a list of all open markets within the event, sorted by price
+
+Each market in the list includes a **Trade** link that opens the individual market view.
+
+<Tip>
+  If an event has only one open market, PolyX skips the event view and shows the market directly.
+</Tip>
+
+## Viewing a Market
+
+A **market** is a single prediction question with two outcomes (e.g., “Will Bitcoin reach \$100k by 2025?” — Yes/No).The market view shows:
+
+- **Market question**
+- **Outcome prices** (e.g., “Yes 45c / No 55c”)
+- **24h Volume** and **Liquidity**
+- **Time remaining** or expiration date
+- **Probability bar** — a visual representation of the current price
+- **Your cash balance**
+
+### [**​**](https://docs.merlin.trade/trading/events-and-markets#market-buttons)
+
+### Market Buttons
+
+| **Button** | **Action** |
+| :-- | :-- |
+| **YES (price)** / **NO (price)** | Start a [**market buy order**](https://docs.pollyx.trade/trading/market-orders)[ ](https://docs.pollyx.trade/trading/market-orders)for that outcome |
+| **Limit YES** / **Limit NO** | Start a [**limit buy order**](https://docs.pollyx.trade/trading/limit-orders) for that outcome |
+| **Refresh** | Update prices |
+| **Back** | Return to the event (if you came from one) |
+| **Main menu** | Go to the main dashboard |
+
+## How to Open a Market
+
+### Paste a URL
+
+Copy any Polymarket link and paste it directly into the Merlin chat:
+
+- Event URL: `polymarket.com/event/event-slug`
+- Market URL: `polymarket.com/event/event-slug/market-slug`
+
+Merlin will display the event or market with a photo preview.
+
+### From Deeplinks
+
+Markets can be shared as Telegram deeplinks. When someone shares a PolyX market link, tapping it opens the market directly in the bot.
+
+### \
+From Positions
+
+Navigate to **Positions** from the main menu, then tap into any position to see the market details and trade buttons.
+
+<Note>
+  PolyX currently supports markets with up to 2 outcomes (e.g., Yes/No). Markets with more outcomes will show an “unsupported market” message.
+</Note>
