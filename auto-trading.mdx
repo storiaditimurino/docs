@@ -4,3 +4,101 @@ description: "Automatically trade Polymarket up/down markets based on price and 
 ---
 
 # Auto Trading
+
+Auto trading lets Merlin automatically buy into Polymarket’s short-cycle up/down markets (5m, 15m, 1h) when conditions match your configured filters. You set the rules — Merlin watches the market and executes.
+
+## How It Works
+
+Polymarket runs recurring up/down markets for tokens like BTC, ETH, SOL, and others. Each market resolves after a fixed cycle (5 minutes, 15 minutes, or 1 hour). Auto trading monitors these markets in real time and places a buy order when:
+
+1. The **token** matches your selected tokens (e.g., BTC, ETH)
+2. The **cycle** matches your selected cycles (e.g., 5m, 15m)
+3. The trade happens within your **entry window** (e.g., last 35 seconds before resolution)
+4. The **price** is within your configured range (e.g., 70c-92c)
+
+When all conditions are met, Merlin buys the outcome token at the current price.
+
+## Getting Started
+
+### Open Auto Trading
+
+Use the `/autotrade` command or tap **“Auto Trading”** from the copy trading hub to open the auto trading dashboard.
+
+### Create a Config
+
+1. Tap **“Add Auto Trade”**
+2. **Choose a preset** — pick from pre-built strategies or create a custom setup
+3. **Select a wallet** — if you have multiple wallets, choose which one will execute trades
+4. **Review and adjust** — edit tokens, cycles, price range, entry window, and amount per trade
+5. Tap **“Start Auto Trade”** to activate
+
+## Preset Strategies
+
+Each preset comes with tuned price range and entry window settings:
+
+| **Preset** | **Price Range** | **Entry Window** | **Description** |
+| :-- | :-- | :-- | :-- |
+| **Closing Bell** | 70c-92c | 35s | Buys high-confidence outcomes in the final seconds |
+| **Steady Hand** | 72c-92c | 60s | Slightly wider window for more opportunities |
+| **Sniper** | 75c-95c | 30s | Targets very high confidence with tight timing |
+| **Swing Trader** | 60c-85c | 180s | Wider price range, enters earlier in the cycle |
+| **Contrarian** | 26c-35c | 300s | Buys the underdog side at low prices |
+| **Custom** | You set | You set | Full control over all parameters |
+
+<Tip>
+  Start with **Closing Bell** to get a feel for how auto trading works. It’s the most conservative preset with high win probability.
+</Tip>
+
+## Configuration Parameters
+
+### Tokens
+
+Select which tokens to trade. Available tokens: BTC, ETH, SOL, DOGE, XRP, HYPE, BNB. You can enable or disable individual tokens from the picker.
+
+### Cycles
+
+Select which market cycles to monitor: **5m**, **15m**, **1h**. Shorter cycles have more frequent opportunities but tighter timing.
+
+### Price Range (Min/Max)
+
+The minimum and maximum price in cents (1-99) for the outcome token. Only trades where the price falls within this range will trigger a buy.
+
+- **High range (e.g., 70-92c)**: Buys outcomes the market considers likely. Higher win rate, lower payout.
+- **Low range (e.g., 26-35c)**: Buys outcomes the market considers unlikely. Lower win rate, higher payout.
+
+### Entry Window (Seconds Before Close)
+
+How many seconds before market resolution the bot is allowed to enter. A smaller window means more certainty about the outcome but fewer opportunities. A larger window gives more chances but at less predictable prices.
+
+### Amount Per Trade
+
+The fixed dollar amount Merlin spends on each trade.
+
+## Managing Configs
+
+From the config detail screen:
+
+- **Start / Pause** — toggle the config on or off
+- **Edit parameters** — tap any parameter button to update tokens, cycles, price range, entry window, or amount
+- **Rename** — give the config a custom name
+- **Delete** — permanently remove the config
+
+## Bulk Actions
+
+From the auto trading dashboard:
+
+- **Pause All** — pauses every active config
+- **Start All** — starts every paused config
+- **Delete All** — permanently removes all configs
+
+Each bulk action asks for confirmation before executing.
+
+## Auto-Claim
+
+When your auto trading positions resolve as winners, Merlin automatically claims the winnings back to your wallet. No manual action needed.
+
+## Insufficient Balance
+
+If your wallet runs out of funds, Merlin pauses the config automatically. You’ll receive a notification with a deposit link. After depositing, restart the config manually from the detail screen.
+
+## [**​**](https://docs.merlin.trade/auto-trading/overview#auto-claim)
