@@ -22,6 +22,12 @@
           "discover-traders",
           "overview"
         ]
+      },
+      {
+        "group": "Auto Trading",
+        "pages": [
+          "auto-trading"
+        ]
       }
     ]
   },
