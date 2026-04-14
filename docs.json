@@ -8,35 +8,40 @@
     "dark": "#E1FF01"
   },
   "navigation": {
-    "languages": [
+    "tabs": [
       {
-        "language": "en",
-        "groups": [
+        "tab": "PolyX",
+        "languages": [
           {
-            "group": "Getting Started",
-            "pages": [
-              "gettingstarted",
-              "quick-start"
-            ]
-          },
-          {
-            "group": "Copy Trading",
-            "pages": [
-              "discover-traders",
-              "overview"
-            ]
-          },
-          {
-            "group": "Auto Trading",
-            "pages": [
-              "auto-trading"
-            ]
-          },
-          {
-            "group": "Trading",
-            "pages": [
-              "fees",
-              "events-and-markets"
+            "language": "en",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "gettingstarted",
+                  "quick-start"
+                ]
+              },
+              {
+                "group": "Copy Trading",
+                "pages": [
+                  "discover-traders",
+                  "overview"
+                ]
+              },
+              {
+                "group": "Auto Trading",
+                "pages": [
+                  "auto-trading"
+                ]
+              },
+              {
+                "group": "Trading",
+                "pages": [
+                  "fees",
+                  "events-and-markets"
+                ]
+              }
             ]
           }
         ]
