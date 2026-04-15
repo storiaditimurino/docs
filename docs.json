@@ -51,6 +51,12 @@
                       "limit-orders",
                       "positions"
                     ]
+                  },
+                  {
+                    "group": "AI Insights",
+                    "pages": [
+                      "ai-insights"
+                    ]
                   }
                 ]
               }
