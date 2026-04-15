@@ -1,0 +1,89 @@
+---
+title: "Limit Orders"
+description: "Set buy and sell orders at your target price"
+---
+
+# Limit Orders
+
+Limit orders let you specify the exact price at which you want to buy or sell. The order stays active until it’s filled, or you cancel it.
+
+## Buy Limit Orders
+
+Buy limit orders are placed from the [**Market screen**](https://docs.merlin.trade/trading/events-and-markets).
+
+### Steps
+
+1. Open a market and tap **“Limit YES”** or **“Limit NO”**
+2. **Enter your limit price** — the bot prompts you to type a price in one of three formats:
+   - **Cents**: type a number 1-99 (e.g., `45` means 45 cents)
+   - **Multiplier**: type a value like `2x` (doubles the current price)
+   - **Percentage offset**: type `+5%` (adds 5% to the current price)
+3. **Choose your amount** — pick a preset or enter a custom USD amount
+4. The order is submitted
+
+### Order Outcomes
+
+After submission, a limit buy order can have three outcomes:
+
+| **Outcome** | **What Happened** |
+| :-- | :-- |
+| **Matched** | Your order was fully filled immediately at your limit price or better |
+| **Posted** | Your order is on the order book, waiting to be filled |
+| **Failed** | Something went wrong (e.g., network error) |
+
+Posted orders appear in your [**Limit Orders**](https://docs.merlin.trade/trading/limit-orders#viewing-limit-orders)**** list and will fill when the market reaches your price.
+
+## Sell Limit Orders
+
+Sell limit orders are placed from the **Position Detail** screen (Limit tab).
+
+### From the Limit Tab
+
+1. Go to **Positions** \> tap a position \> switch to the **Limit** tab
+2. Choose one of:
+   - **Limit Sell 100%** — sell your entire position at a price you specify
+   - **Limit Sell X%** — enter a custom percentage, then a price
+   - **Multiplier presets** (e.g., “Sell 50% at 2x”, “Sell 100% at 4x”) — one-tap sell at a multiple of the current price
+
+### Setting the Price
+
+The price input accepts the same three formats as buy limits:
+
+- **Cents** (e.g., `75`)
+- **Multiplier** (e.g., `2x`)
+- **Percentage offset** (e.g., `+10%`)
+
+All prices are clamped to the valid range of 1-99 cents.
+
+## Viewing Limit Orders
+
+View all your active limit orders using the **Limit Orders** button on the main menu or the `/orders` command.The limit orders screen shows:
+
+- Total number of active orders
+- Orders grouped by market, each showing:
+  - Buy or Sell side
+  - Order value in USD
+  - Trigger price and current price
+  - Fill progress (filled/total shares)
+
+### Pagination
+
+Orders are displayed 2 market groups per page. Use the **Previous** and **Next** buttons to navigate.
+
+## Cancelling Orders
+
+### Cancel a Single Order
+
+Each order in the list has a **“Cancel Order”** link. Tap it to cancel that specific order. You’ll see a confirmation once the cancellation is processed.
+
+### Cancel All Orders
+
+Tap **“Cancel All Orders”** at the bottom of the limit orders screen. You’ll be asked to confirm before all orders are cancelled.
+
+<Note>
+  PolyX charges a [**0.49% commission**](https://docs.merlin.trade/trading/fees) on all trades.
+</Note>
+
+<Note>
+  After placing a market buy order, PolyX may suggest setting take-profit and stop-loss limit orders automatically. You can accept the suggestions or skip them.
+</Note>

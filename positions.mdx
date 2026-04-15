@@ -1,0 +1,88 @@
+---
+title: "Positions"
+description: "Track your open and closed positions"
+---
+
+# Positions
+
+The Positions screen shows all your Polymarket positions with real-time P&L tracking. Access it from the main menu or with `/positions`.
+
+## Open Positions
+
+The main positions view shows:
+
+- **Positions Value** — total USD value of all open positions
+- **Total P&L** — combined profit and loss across all positions
+- **Open positions count**
+
+Each position entry displays:
+
+- Market title and your outcome (e.g., “Yes” or “No”)
+- Current price and P&L percentage
+- Entry price vs. current price
+- Invested amount vs. current value
+- Number of shares held
+- Expiration date
+- Status badge (Open, Won, or Lost)
+- A visual probability bar
+
+### Pagination
+
+Positions are displayed 3 per page. Use **Previous** and **Next** buttons to navigate between pages.
+
+### Empty State
+
+If you don’t have any positions yet, you’ll see a prompt to start trading by exploring markets.
+
+## Position Detail
+
+Tap any position to see its full details. The position detail screen shows all the information from the list view, plus:
+
+- Your cash balance
+- Open limit orders for this market (if any)
+- Full buy and sell controls
+
+### Market Tab (Default)
+
+The Market tab provides instant trading controls:\
+\
+**Buy more:**
+
+- Preset amount buttons (e.g., 10,10,50, \$100 from your [**settings**](https://docs.merlin.trade/features/settings))
+- Custom amount input
+
+**Sell:**
+
+- **Sell Initial** — recover your initial investment (only available when profitable)
+- Preset percentage buttons (e.g., 25%, 50%, 75%, 100%)
+- Custom percentage input
+
+### Limit Tab
+
+Switch to the Limit tab for limit order controls:
+
+- **Buy Limit** — set a limit buy at a price you specify
+- **Limit Sell 100%** — sell entire position at a target price
+- **Limit Sell X%** — sell a custom percentage at a target price
+- **Multiplier presets** — one-tap sell at a multiple of current price (e.g., “Sell 50% at 2x”)
+
+### Limit Orders on Position
+
+If you have active limit orders for the position’s market, they’re displayed below the position details with:
+
+- Side (Buy/Sell) and value
+- Trigger price vs. current price
+- Fill progress
+- Cancel link for each order
+
+## Closed Positions
+
+Switch to the **Closed** tab from the positions screen to view resolved positions.Closed positions show final outcomes, resolved P&L, and options to generate PNL cards.
+
+## PNL Cards
+
+From any position (open or closed), you can generate a shareable **PNL Card** — an image showing your position details and performance. The card is generated asynchronously and sent as a photo message.
+
+## Redeeming Resolved Positions
+
+When a market resolves and your position has won, you’ll see a **“Claim”** link with the claimable amount. Tap it to redeem your winnings. Lost positions show a **“Close”** link to clear the position from your list.

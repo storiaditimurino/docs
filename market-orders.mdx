@@ -1,0 +1,70 @@
+---
+title: "Market Orders"
+description: "Buy and sell at current market prices"
+---
+
+# Market Orders
+
+Market orders execute immediately at the current market price. Use them when you want to enter or exit a position quickly.
+
+## Buying
+
+### From a Market Screen
+
+1. Open any market (paste a Polymarket URL or navigate from Positions)
+2. Tap an outcome button (e.g., **“YES (45c)”**)
+3. Choose your buy amount:
+   - **Preset amounts** — tap one of your quick buy presets (e.g.,<kbd>10,50, \$100</kbd>)
+   - **Custom amount** — tap the custom amount button, then type a USD value
+4. The order is submitted and you’ll see a confirmation: “Transaction Submitted”
+
+### From a Position
+
+If you already hold a position, you can buy more directly from the **Position Detail** screen:
+
+1. Go to **Positions** \> tap a position
+2. On the **Market** tab, use the buy preset buttons or enter a custom amount
+3. The order is submitted with the same flow
+
+### Custom Amount Input
+
+When entering a custom amount:
+
+- Type a positive number (e.g., `25` or `150.50`)
+- The amount must be at least the minimum buy amount
+- The amount cannot exceed your available balance
+
+If your input is invalid, the bot will re-prompt you with an error message.
+
+## Selling
+
+Sell orders are available from the **Position Detail** screen (Market tab). There are three ways to sell:
+
+### Sell Initial
+
+Recovers your initial investment by selling just enough shares. Only available when your position is profitable (current value exceeds what you invested).
+
+### Preset Percentages
+
+Sell a percentage of your position using your quick sell presets (e.g., 25%, 50%, 75%, 100%). The number of shares is calculated automatically based on your position size.
+
+### Custom Percentage
+
+1. Tap **“Sell custom %”**
+2. Enter an integer between 1 and 100
+3. The bot calculates how many shares that represents and submits the order
+
+## Order Confirmation
+
+After submitting any market order, you’ll see a “Transaction Submitted” message. The order is processed in the background. Once completed, the message updates to show:
+
+- **Success** — order details, shares purchased/sold, and a link to view the transaction on Polygonscan
+- **Failure** — error details with a link back to the main menu
+
+<Note>
+  PolyX charges a [**0.49% commission**](https://docs.merlin.trade/trading/fees) on all trades.
+</Note>
+
+<Tip>
+  Customize your quick buy and sell preset amounts in [**Settings**](https://docs.merlin.trade/features/settings) to match your preferred trading sizes.
+</Tip>
