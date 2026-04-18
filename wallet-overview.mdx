@@ -1,0 +1,67 @@
+---
+title: "Wallet Overview"
+description: "Manage your trading wallets"
+---
+
+# Wallet Overview
+
+PolyX supports multiple wallets, letting you organize your funds across separate addresses. Access your wallets from the main menu or with `/wallet`.
+
+## Wallet List
+
+The wallet list shows all your wallets with:
+
+- Wallet label (custom name or default “W1”, “W2”, etc.)
+- Truncated address (first 6 \+ last 4 characters)
+- Active wallet indicator (checkmark)
+
+Tap any wallet to view its details. The active wallet is used for all trading operations.
+
+### Active Wallet
+
+One wallet is always set as the **active** wallet (marked with a checkmark). This is the wallet used for:
+
+- Placing buy and sell orders
+- Checking your balance on the main menu
+- Deposit addresses shown on the wallet detail screen
+
+To change the active wallet, open a different wallet’s detail screen and tap**“Set as default”**.
+
+## Wallet Detail
+
+Tapping a wallet from the list shows:
+
+- **Deposit addresses** for all supported chains (see below)
+- **Cash balance** in USD
+- Block explorer links for each chain
+
+### **Supported Chains**
+
+| **Chain** | **Deposit Address** | **Supported Tokens** |
+| :-- | :-- | :-- |
+| **Polygon** | Polymarket proxy (Safe) address | USDC, USDC.e |
+| **Solana** | Solana wallet address | SOL, USDC, USDT |
+| **Ethereum** | EVM wallet address | ETH, USDC, USDT |
+| **BASE** | EVM wallet address | ETH, USDC, USDT |
+| **BNB** | EVM wallet address | BNB, USDC, USDT |
+| **Bitcoin** | Bitcoin address | BTC |
+
+Tap any address to copy it to your clipboard.
+
+### Wallet Actions
+
+| **Button** | **Action** |
+| :-- | :-- |
+| **View on Polymarket** | Opens your Polymarket profile (if available) |
+| **Withdraw** | Start a [**withdrawal**](https://docs.merlin.trade/wallets/deposit-withdraw#withdrawing-funds) |
+| **Set as default** | Make this the active wallet (hidden if already active) |
+| **Refresh** | Update balance |
+| **Export** | Show the [**private key**](https://docs.merlin.trade/wallets/export) |
+| **Rename** | Change the wallet label |
+| **Back** | Return to wallet list |
+
+## [**​**](https://docs.merlin.trade/wallets/overview#wallet-detail)
+
+<Warning>
+  Minimum deposit amount is **\$10** worth of tokens. Deposits below this threshold may not be credited.
+</Warning>

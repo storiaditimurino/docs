@@ -57,6 +57,22 @@
                     "pages": [
                       "ai-insights"
                     ]
+                  },
+                  {
+                    "group": "Wallet",
+                    "pages": [
+                      "wallet-overview",
+                      "create-and-import-wallets",
+                      "deposit-and-withdraw",
+                      "export-private-key"
+                    ]
+                  },
+                  {
+                    "group": "Features",
+                    "pages": [
+                      "referrals",
+                      "settings"
+                    ]
                   }
                 ]
               }

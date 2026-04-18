@@ -1,0 +1,40 @@
+---
+title: "Create & Import Wallets"
+description: "Add new wallets to your account"
+---
+
+# Create & Import Wallets
+
+You can add wallets to your Merlin account in two ways: generate a new one or import an existing wallet using a private key.
+
+## Creating a New Wallet
+
+1. Go to **Wallet** \> tap **“Create Wallet”**
+2. The bot generates a new wallet
+3. You’re prompted to give the wallet a name
+   - Type a name (1-20 characters), or
+   - Type `/skip` to use the default label (W1, W2, etc.)
+4. Done! You’re redirected to the wallet list showing your new wallet
+
+<Tip>
+  All wallets created via “Create Wallet” are recoverable from your single seed phrase. You only need to back up one seed phrase to recover all of them.
+</Tip>
+
+## Importing a Wallet
+
+1. Go to **Wallet** \> tap **“Import Wallet”**
+2. Enter your EVM private key (64 hex characters, with or without `0x` prefix)
+3. The bot imports the wallet and sets up a trading proxy
+4. You’re redirected to the wallet list
+
+<Warning>
+  Never share your private key with anyone. Always be cautious when entering sensitive information.
+</Warning>
+
+## Renaming a Wallet
+
+You can rename any wallet at any time:
+
+1. Open the wallet detail screen
+2. Tap **“Rename”**
+3. Type a new name (1-20 characters) or `/skip` to reset to the default label
