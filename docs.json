@@ -112,10 +112,7 @@
      "vscode"
    ]
   },
-  "favicon": {
-    "light": "/images/LOGOPOLYX.svg",
-    "dark": "/images/LOGOPOLYX.svg"
-  },
+  "favicon": "/images/LOGOPOLYX.svg",
   "appearance": {
     "strict": false,
     "default": "dark"
@@ -131,6 +128,7 @@
     "latex": false
   },
   "icons": {
-    "library": "tabler"
-  }
+    "library": "fontawesome"
+  },
+  "description": "AI trading assistant for prediction markets"
 }
